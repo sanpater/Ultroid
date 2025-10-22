@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/TeamUltroid/Ultroid.git"
+REPO="https://github.com/sanpater/Ultroid.git"
 CURRENT_DIR="$(pwd)"
 ENV_FILE_PATH=".env"
-DIR="/root/TeamUltroid"
+DIR="/root/sanpater"
 
 while [ $# -gt 0 ]; do
     case "$1" in
     --dir=*)
-        DIR="${1#*=}" || DIR="/root/TeamUltroid"
+        DIR="${1#*=}" || DIR="/root/sanpater"
         ;;
     --branch=*)
         BRANCH="${1#*=}" || BRANCH="main"
