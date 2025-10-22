@@ -17,7 +17,6 @@ def main():
     from .startup.funcs import (
         WasItRestart,
         autopilot,
-        customize,
         plug,
         ready,
         startup_stuff,
@@ -73,9 +72,6 @@ def main():
 
     # for channel plugins
     plugin_channels = udB.get_key("PLUGIN_CHANNEL")
-
-    # Customize Ultroid Assistant...
-    ultroid_bot.run_in_loop(customize())
 
     # Load Addons from Plugin Channels.
     if plugin_channels:
