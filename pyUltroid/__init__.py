@@ -107,7 +107,7 @@ if run_as_module:
             # Fetch isolated credentials
             self.api_id = udB.get_key("VC_API_ID") or udB.get_key("API_ID") or Var.API_ID
             self.api_hash = udB.get_key("VC_API_HASH") or udB.get_key("API_HASH") or Var.API_HASH
-            self.session_str = udB.get_key("SESSION")
+            self.session_str = udB.get_key("VC_SESSION")
 
         # Decide session type
             if self.session_str:
